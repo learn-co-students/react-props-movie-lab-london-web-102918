@@ -22,7 +22,7 @@ export default class CardBack extends Component {
         <span />
         { (this.props.IMDBRating !== null)
           ?this.generateRatingElement (this.props.IMDBRating)
-          : 'No Rating Found'}
+          : <h4>No Rating Found</h4>}
         <span />
         <h5 className="genres">{this.props.genres.join(', ')}</h5>
       </div>
